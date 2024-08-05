@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="Download.js"></script>
+    <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+    <title>Invoice</title>
+</head>
+
+<body>
+    <button class="btn btn-primary" onclick="generatePDF()">Download</button>
+    <div id="invoice">
+        <div class="header">
+            <div class="logo">
+                <div class="circle">
+                    <p class="letter">Z</p>
+                </div>
+            </div>
+            <div class="header_info">
+                <h5>Zylkerm Thread & Weave</h5>
+                <p>14B, Northern Street<br>
+                    Greater South Avenue<br>
+                    New York New York 10001<br>
+                    U.S.A
+                </p>
+            </div>
+        </div>
+
+        <div class="line">
+            <h3>INVOICE</h3>
+        </div>
+
+        <div class="bill_to">
+            <div class="p_1">
+                <h5>Bill To</h5>
+                <p><b style="margin: 0;">Scott, Melba R.</b><br>
+                    2476 Blackwell Street<br>
+                    Fairbanks<br>
+                    99701 Colorado<br>
+                    U.S.A</p>
+            </div>
+            <div class="p_2">
+                <p>invoice#<br>
+                    <b style="margin: 0;">INV-000002</b>
+                </p>
+            </div>
+        </div>
+        <div class="ship_to">
+            <h5>Ship To</h5>
+            <p>2476 Blackwell Street<br>
+                Fairbanks<br>
+                99701 Colorado<br>
+                U.S.A</p>
+        </div>
+
+        <div class="table_1">
+            <table>
+                <tr>
+                    <th>Invoice Date</th>
+                    <th>Terms</th>
+                    <th>Due Date</th>
+                </tr>
+                <tr>
+                    <td>18 May 2023</td>
+                    <td>due on Receipt</td>
+                    <td>18 May 2023</td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <div class="table_2">
+            <table>
+                <tr>
+                    <th>#</th>
+                    <th class="item">Item & Description</th>
+                    <th class="right">Qty</th>
+                    <th class="right">Rate</th>
+                    <th class="right">Amount</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td class="item">Pepe Jeans<br>
+                        <span class="item_info">Size - 42, Striped Blue</span>
+                    </td>
+                    <td class="right">1.00<br>
+                        <span class="item_info">pcs</span>
+                    </td>
+                    <td class="right">24.99</td>
+                    <td class="right">24.99</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td class="item">Boys Shirt<br>
+                        <span class="item_info">Size - 42, Striped Blue</span>
+                    </td>
+                    <td class="right">1.00<br>
+                        <span class="item_info">pcs</span>
+                    </td>
+                    <td class="right">16.99</td>
+                    <td class="right">16.99</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td class="item">Men Shirt<br>
+                        <span class="item_info">Size - 42, Striped Blue</span>
+                    </td>
+                    <td class="right">1.00<br>
+                        <span class="item_info">pcs</span>
+                    </td>
+                    <td class="right">19.99</td>
+                    <td class="right">19.99</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="balance">
+            <div class="box_1">
+                <p>Thanks for your business.</p>
+            </div>
+            <div class="box_2">
+                <table>
+                    <tr>
+                        <td>Sub total</td>
+                        <td>61.97</td>
+                    </tr>
+                    <tr>
+                        <td>Tax Rate</td>
+                        <td>5.00%</td>
+                    </tr>
+                    <tr>
+                        <td><b>Total</b></td>
+                        <td><b>$65.06</b></td>
+                    </tr>
+                    <tr>
+                        <td><b>Balance Due</b></td>
+                        <td><b>$65.06</b></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="footer">
+            <h6>Terms & Conditions</h6>
+            <p>Full payment is due upon receipt of this invoice. Late payments may incur additional charges or interest
+                as per the applicable laws.</p>
+        </div>
+    </div>
+</body>
+
+</html>
